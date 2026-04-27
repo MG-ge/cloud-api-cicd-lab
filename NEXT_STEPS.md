@@ -2,7 +2,7 @@
 
 ## Current Recommendation
 
-Slice 6 is implemented locally. The CI workflow now runs pytest and builds the Docker image.
+Slice 6 is complete. The CI workflow now runs pytest and builds the Docker image.
 
 Do not add real cloud hosting yet.
 

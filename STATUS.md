@@ -134,7 +134,7 @@ docker run with REQUIRED_DEPENDENCY_URL: passed, /ready returned 200
 local pytest after adding CI workflow: passed, 13 passed
 GitHub Actions CI: passed on GitHub
 local docker build -t cloud-api-cicd-lab:test .: passed
-GitHub Actions Docker build: added to workflow
+GitHub Actions Docker build: passed on GitHub
 deployment-readiness docs: added
 support cases: added
 runbook: added
