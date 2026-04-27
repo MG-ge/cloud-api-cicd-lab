@@ -2,13 +2,13 @@
 
 ## Current Recommendation
 
-Verify Slice 3 locally, then publish the project to GitHub when ready so GitHub Actions can run.
+Slice 3 is complete. The project has been pushed to GitHub and the GitHub Actions CI workflow has passed.
 
 Do not add deployment yet.
 
 ## Slice 3 Verification
 
-Run local tests:
+Local tests:
 
 ```bash
 cd <project-folder>
@@ -28,6 +28,8 @@ The workflow should:
 - set up Python 3.12
 - install dependencies
 - run pytest
+
+GitHub CI should also show a passing run for the latest commit.
 
 ## What CI Means
 
