@@ -8,7 +8,7 @@ This is not production experience. It is a local learning and portfolio project.
 
 ## Current State
 
-Slices 1-4 are implemented:
+Slices 1-5 are implemented:
 
 - FastAPI app
 - `GET /health`
@@ -22,6 +22,8 @@ Slices 1-4 are implemented:
 - secrets-handling notes
 - rollback/redeploy notes
 - support cases and runbook
+- career package
+- interview practice guide
 
 Real cloud deployment is not added yet.
 
@@ -174,6 +176,8 @@ CI does not deploy the app. It only proves the automated tests pass in GitHub's 
 - [Rollback and redeploy notes](docs/rollback-redeploy.md)
 - [Cloud API support runbook](runbooks/cloud-api-support-runbook.md)
 - [Support cases](support-cases/README.md)
+- [Career package](docs/career-package-project-2.md)
+- [Interview practice](docs/project-2-interview-practice.md)
 
 ## Endpoints
 

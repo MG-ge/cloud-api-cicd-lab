@@ -2,6 +2,8 @@
 
 Review date: 2026-04-27
 
+Updated after must-fix items: 2026-04-27
+
 Reviewer stance: strict senior reviewer for a junior SaaS/Application Support, Cloud Support, Application Support, Integration Support, and early DevOps/SRE portfolio path.
 
 ## 1. Executive Verdict
@@ -23,11 +25,10 @@ What is strong:
 
 What is weak:
 
-- `AGENTS.md` still contains stale wording about waiting for plan review.
 - Docker is only verified manually, not in CI.
 - CI is intentionally basic and does not run linting, type checks, or Docker build checks.
 - There is no real deployment, which is acceptable, but the owner must explain that clearly.
-- The project does not yet have a career package for CV, LinkedIn, and interview preparation.
+- The owner still needs to practice explaining the project without reading from the docs.
 
 What a recruiter or hiring manager should understand in 60 seconds:
 
@@ -58,7 +59,8 @@ This is a junior portfolio lab showing that I can build and support a small API,
 | Known limitations | Present | Honest and useful. |
 | AI usage note | Present | Honest and junior-credible. |
 | Local verification evidence | Present | `STATUS.md` records test/API/Docker/CI checks. |
-| Career package | Missing | Should be added before using this project heavily in applications. |
+| Career package | Present | `docs/career-package-project-2.md`. |
+| Interview practice | Present | `docs/project-2-interview-practice.md`. |
 
 ## 3. Technical Correctness Review
 
@@ -294,8 +296,13 @@ Those are intentional limits for this stage. This repo proves local API behavior
 
 ### Must Fix Before Heavy Sharing
 
-- Update stale `AGENTS.md` wording that still says not to add more application code until plan review. The plan has already been reviewed and implemented through Slice 4.
-- Add a short Project 2 career package with CV bullets, LinkedIn text, GitHub repo description, and interview talking points.
+No open must-fix items remain after the 2026-04-27 update.
+
+Completed must-fix items:
+
+- Updated stale `AGENTS.md` wording.
+- Added `docs/career-package-project-2.md`.
+- Added `docs/project-2-interview-practice.md`.
 
 ### Nice To Improve
 
@@ -380,9 +387,29 @@ Do not add more technical features yet.
 
 Next best step:
 
-1. Apply the two small must-fix presentation items.
-2. Create the Project 2 career package.
-3. Practice explaining Project 2 manually.
-4. Only then decide whether to add Docker build in CI or a no-cost deployment simulation.
+1. Practice explaining Project 2 manually.
+2. Add Project 2 to CV/LinkedIn when ready.
+3. Only then decide whether to add Docker build in CI or a no-cost deployment simulation.
 
 The repo is already a credible junior portfolio project. The next gains come from presentation, explanation, and small verification polish, not more architecture.
+
+## 10. Second Review After Must-Fixes
+
+Verdict after must-fix cleanup:
+
+```text
+Project 2 is ready to use as a junior portfolio repo, assuming the owner can explain it clearly and honestly.
+```
+
+The repo now has:
+
+- accurate project instructions
+- career package
+- interview practice material
+- support cases
+- runbook
+- known limitations
+- AI usage note
+- local and GitHub CI verification
+
+Do not add more features until the owner can answer the interview questions without AI.

@@ -2,7 +2,7 @@
 
 ## Current Recommendation
 
-Slice 4 is complete. The project now has deployment-readiness notes, secrets-handling notes, rollback/redeploy notes, support cases, and a runbook.
+Slice 5 is complete. The project now has career-package text and interview practice material.
 
 Do not add real cloud hosting yet.
 
@@ -38,6 +38,8 @@ cat docs/deployment-readiness.md
 cat docs/secrets-handling.md
 cat docs/rollback-redeploy.md
 cat runbooks/cloud-api-support-runbook.md
+cat docs/career-package-project-2.md
+cat docs/project-2-interview-practice.md
 ls support-cases
 ```
 
@@ -78,26 +80,28 @@ The app is monitored.
 - Deployment docs are not the same as a real deployed service.
 - Secrets should be referenced by name, not written into files or chat.
 
-## Slice 5: Portfolio Packaging Or Optional Deployment Simulation
+## Next: Practice Before More Features
 
-Next implementation should be one of these:
+Before adding more code, practice:
 
-1. Portfolio packaging:
-   - strict project review
-   - README polish if needed
-   - CV and LinkedIn project text
-   - interview practice notes
+- 60-second project explanation
+- `/health` versus `/ready`
+- environment variables and readiness
+- Docker port mapping
+- GitHub Actions CI
+- one support case
+- one honest limitation
 
-2. Optional deployment simulation:
-   - no paid services
-   - no Kubernetes
-   - document a fake deployment checklist
-   - practice verifying health/readiness as if the service were deployed
+After practice, choose one:
+
+1. Add Project 2 to CV and LinkedIn.
+2. Add a Docker build check to CI as a small technical improvement.
+3. Start a no-cost deployment simulation doc.
 
 Recommended next step:
 
 ```text
-Do a strict senior review of Project 2 before adding anything else.
+Test the owner with interview questions before adding more features.
 ```
 
 Do not add:

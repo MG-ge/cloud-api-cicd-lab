@@ -28,11 +28,26 @@ The goal is to prove practical readiness for roles like:
 - Junior Integration Specialist
 - SaaS Technical Support Specialist
 
-## Current Gate
+## Current State
 
-Do not add more application code until the project plan has been reviewed.
+The project plan has been reviewed and Slices 1-5 are implemented:
 
-A minimal `/health` scaffold already exists from the first Project 2 checkpoint. Treat that as a small starting point, not permission to expand the app before the plan is accepted.
+- local FastAPI app
+- environment-based config
+- `/health`, `/config`, and `/ready`
+- pytest coverage
+- Dockerfile
+- GitHub Actions CI
+- deployment-readiness documentation
+- secrets-handling notes
+- rollback/redeploy notes
+- support cases and runbook
+- career package
+- interview practice guide
+
+Do not add more application features unless the next task explicitly asks for them.
+
+The current priority is portfolio packaging, interview practice, and small verification polish.
 
 ## Build Direction
 
@@ -44,7 +59,7 @@ Prefer:
 - local development first
 - clear environment configuration
 - `GET /health` for process health
-- `GET /ready` for configuration readiness later
+- `GET /ready` for configuration readiness
 - pytest tests that run locally and in CI
 - Docker for repeatable local runs
 - GitHub Actions for automated tests

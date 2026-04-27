@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Slice 4: deployment-readiness documentation implemented.
+Slice 5: portfolio packaging and interview practice implemented.
 
 ## Current State
 
@@ -48,12 +48,25 @@ Implemented in Slice 4:
 - support runbook
 - support cases
 
+Implemented in Slice 5:
+
+- senior review updated after must-fixes
+- stale `AGENTS.md` wording corrected
+- Project 2 career package
+- Project 2 interview practice guide
+
 Not implemented yet:
 
 - real cloud deployment
 - production secret storage
 - production monitoring
 - alerting
+
+Optional improvements not implemented:
+
+- Docker build in CI
+- real cloud deployment
+- structured application logs
 
 ## What Slice 1 Proves
 
@@ -88,6 +101,12 @@ Not implemented yet:
 - I can write support cases from symptoms, commands, evidence, cause, and resolution.
 - I can create a runbook that a junior support engineer could follow.
 
+## What Slice 5 Proves
+
+- I can package the project for CV, LinkedIn, GitHub, and interview use.
+- I can describe the project without claiming production experience.
+- I can identify what I should understand before adding more features.
+
 ## Latest Verification
 
 Last verified on 2026-04-27.
@@ -106,15 +125,17 @@ GitHub Actions CI: passed on GitHub
 deployment-readiness docs: added
 support cases: added
 runbook: added
+career package: added
+interview practice guide: added
 ```
 
 ## Current Goal
 
-Review Project 2 as a GitHub-facing portfolio project, then decide whether to polish career material or add a small deployment simulation.
+Practice explaining Project 2 manually, then decide whether to update CV/LinkedIn or add a small Docker-in-CI improvement.
 
 ## Next Slice
 
-Slice 5 should package Project 2 for portfolio review.
+Next work should be practice and career packaging outside the app, not new application features.
 
 Do not add cloud hosting yet unless explicitly approved.
 
