@@ -2,11 +2,11 @@
 
 ## Current Recommendation
 
-Slice 3 is complete. The project has been pushed to GitHub and the GitHub Actions CI workflow has passed.
+Slice 4 is complete. The project now has deployment-readiness notes, secrets-handling notes, rollback/redeploy notes, support cases, and a runbook.
 
-Do not add deployment yet.
+Do not add real cloud hosting yet.
 
-## Slice 3 Verification
+## Current Verification
 
 Local tests:
 
@@ -31,6 +31,16 @@ The workflow should:
 
 GitHub CI should also show a passing run for the latest commit.
 
+Documentation to review:
+
+```bash
+cat docs/deployment-readiness.md
+cat docs/secrets-handling.md
+cat docs/rollback-redeploy.md
+cat runbooks/cloud-api-support-runbook.md
+ls support-cases
+```
+
 ## What CI Means
 
 CI means:
@@ -53,7 +63,7 @@ The app is production-ready.
 The app is monitored.
 ```
 
-## What To Understand Before Deployment Docs
+## What To Understand Now
 
 - `push` means the workflow runs when code is pushed to GitHub.
 - `pull_request` means the workflow runs when a PR is opened or updated.
@@ -62,18 +72,33 @@ The app is monitored.
 - `pytest` is the actual test command.
 - A green CI run means tests passed in GitHub's runner.
 - A red CI run means something failed and the logs must be read.
+- `/health` means the process can respond.
+- `/ready` means required configuration is present.
+- Docker packaging is not the same as deployment.
+- Deployment docs are not the same as a real deployed service.
+- Secrets should be referenced by name, not written into files or chat.
 
-## Slice 4: Deployment, Secrets, Rollback, Redeploy Docs
+## Slice 5: Portfolio Packaging Or Optional Deployment Simulation
 
-Next implementation should add documentation only:
+Next implementation should be one of these:
 
-- deployment checklist
-- required environment variables
-- health and readiness verification after deploy
-- secrets-handling notes
-- rollback checklist
-- redeploy checklist
-- support case for CI failure or readiness failure
+1. Portfolio packaging:
+   - strict project review
+   - README polish if needed
+   - CV and LinkedIn project text
+   - interview practice notes
+
+2. Optional deployment simulation:
+   - no paid services
+   - no Kubernetes
+   - document a fake deployment checklist
+   - practice verifying health/readiness as if the service were deployed
+
+Recommended next step:
+
+```text
+Do a strict senior review of Project 2 before adding anything else.
+```
 
 Do not add:
 

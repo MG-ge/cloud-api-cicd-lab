@@ -1,8 +1,8 @@
 # Support Cases
 
-This folder will contain realistic support investigations.
+Realistic support investigations for this portfolio lab.
 
-Each case should explain:
+Each case explains:
 
 - user or system symptom
 - commands used
@@ -11,9 +11,8 @@ Each case should explain:
 - resolution or workaround
 - prevention idea
 
-Planned cases:
+Cases:
 
-- service healthy but not ready
-- missing environment variable
-- Docker port mismatch
-- CI test failure
+- [Case 001: Health is OK but readiness fails](case-001-health-ok-ready-fails.md)
+- [Case 002: Docker container runs but port is not reachable](case-002-docker-port-mismatch.md)
+- [Case 003: CI fails after a code change](case-003-ci-test-failure.md)

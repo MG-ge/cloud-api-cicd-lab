@@ -8,7 +8,7 @@ This is not production experience. It is a local learning and portfolio project.
 
 ## Current State
 
-Slices 1-3 are implemented:
+Slices 1-4 are implemented:
 
 - FastAPI app
 - `GET /health`
@@ -18,8 +18,12 @@ Slices 1-3 are implemented:
 - pytest coverage for config, health, and readiness behavior
 - Dockerfile for local container runs
 - GitHub Actions workflow for running tests in CI
+- deployment-readiness documentation
+- secrets-handling notes
+- rollback/redeploy notes
+- support cases and runbook
 
-Deployment is not added yet.
+Real cloud deployment is not added yet.
 
 ## Target Roles
 
@@ -163,6 +167,14 @@ The CI workflow does:
 
 CI does not deploy the app. It only proves the automated tests pass in GitHub's runner environment.
 
+## Support Documentation
+
+- [Deployment readiness notes](docs/deployment-readiness.md)
+- [Secrets handling notes](docs/secrets-handling.md)
+- [Rollback and redeploy notes](docs/rollback-redeploy.md)
+- [Cloud API support runbook](runbooks/cloud-api-support-runbook.md)
+- [Support cases](support-cases/README.md)
+
 ## Endpoints
 
 ### `GET /health`
@@ -203,7 +215,7 @@ This version does not include:
 - real production secrets
 - production monitoring
 - senior platform engineering claims
-- deployment
+- real cloud deployment
 
 ## AI Usage
 
