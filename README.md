@@ -8,7 +8,9 @@ This is not production experience. It is a local learning and portfolio project.
 
 ## Current State
 
-Slices 1-6 are implemented:
+Project 2 v1 is complete.
+
+Implemented:
 
 - FastAPI app
 - `GET /health`

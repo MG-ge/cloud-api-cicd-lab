@@ -384,15 +384,15 @@ gh run list --repo MG-ge/cloud-api-cicd-lab --limit 5
 
 ## 9. Final Recommendation
 
-Do not add more technical features yet.
+Stop Project 2 v1.
 
 Next best step:
 
 1. Practice explaining Project 2 manually.
-2. Add Project 2 to CV/LinkedIn when ready.
-3. Only then decide whether to add a no-cost deployment simulation.
+2. Keep Project 2 visible in CV/GitHub materials.
+3. Start Project 3 planning: Observability + Incident Response Lab.
 
-The repo is already a credible junior portfolio project. The next gains come from presentation, explanation, and small verification polish, not more architecture.
+The repo is already a credible junior portfolio project. The next gains should come from Project 3, not more Project 2 architecture.
 
 ## 10. Second Review After Must-Fixes
 
@@ -414,4 +414,4 @@ The repo now has:
 - local and GitHub CI verification
 - Docker build verification in CI
 
-Do not add more features until the owner can answer the interview questions without AI.
+Do not add more Project 2 features. The next technical portfolio project should focus on observability and incident response.

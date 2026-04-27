@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-Slice 6: Docker build check added to CI.
+Project 2 v1 complete.
 
 ## Current State
 
-Project 2 has started as the next portfolio project after `b2b-saas-support-lab`.
+Project 2 is complete as a junior portfolio v1 after `b2b-saas-support-lab`.
 
 Implemented in Slice 1:
 
@@ -142,15 +142,28 @@ career package: added
 interview practice guide: added
 ```
 
-## Current Goal
+## Completion Decision
 
-Verify the Docker build CI check on GitHub, then practice explaining Project 2 manually.
+Project 2 v1 is complete.
 
-## Next Slice
+Stop adding features to Project 2 for now. It already proves the intended junior cloud/application support readiness skills:
 
-Next work should be practice, CV/LinkedIn updates, or a no-cost deployment simulation doc.
+- environment-based configuration
+- `/health`, `/config`, and `/ready`
+- Docker build and run basics
+- GitHub Actions pytest and Docker build checks
+- secrets-handling notes
+- deployment-readiness notes
+- rollback/redeploy notes
+- support cases and runbook
 
-Do not add cloud hosting yet unless explicitly approved.
+## Next Project
+
+Project 3 should be `Observability + Incident Response Lab`.
+
+The next project should focus on logs, metrics, alerts, incident triage, runbooks, and post-incident review.
+
+Do not expand Project 2 into Kubernetes, frontend, auth, database, or a SaaS ticket system.
 
 ## Not In Scope For v1
 
