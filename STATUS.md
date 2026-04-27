@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Slice 5: portfolio packaging and interview practice implemented.
+Slice 6: Docker build check added to CI.
 
 ## Current State
 
@@ -55,6 +55,12 @@ Implemented in Slice 5:
 - Project 2 career package
 - Project 2 interview practice guide
 
+Implemented in Slice 6:
+
+- Docker image build check in GitHub Actions CI
+- no Docker registry push
+- no deployment
+
 Not implemented yet:
 
 - real cloud deployment
@@ -64,7 +70,6 @@ Not implemented yet:
 
 Optional improvements not implemented:
 
-- Docker build in CI
 - real cloud deployment
 - structured application logs
 
@@ -107,6 +112,12 @@ Optional improvements not implemented:
 - I can describe the project without claiming production experience.
 - I can identify what I should understand before adding more features.
 
+## What Slice 6 Proves
+
+- I can make CI verify both tests and Docker packaging.
+- I can keep CI separate from deployment.
+- I can build a container image without pushing it to a registry.
+
 ## Latest Verification
 
 Last verified on 2026-04-27.
@@ -122,6 +133,8 @@ docker run without REQUIRED_DEPENDENCY_URL: passed, /ready returned 503
 docker run with REQUIRED_DEPENDENCY_URL: passed, /ready returned 200
 local pytest after adding CI workflow: passed, 13 passed
 GitHub Actions CI: passed on GitHub
+local docker build -t cloud-api-cicd-lab:test .: passed
+GitHub Actions Docker build: added to workflow
 deployment-readiness docs: added
 support cases: added
 runbook: added
@@ -131,11 +144,11 @@ interview practice guide: added
 
 ## Current Goal
 
-Practice explaining Project 2 manually, then decide whether to update CV/LinkedIn or add a small Docker-in-CI improvement.
+Verify the Docker build CI check on GitHub, then practice explaining Project 2 manually.
 
 ## Next Slice
 
-Next work should be practice and career packaging outside the app, not new application features.
+Next work should be practice, CV/LinkedIn updates, or a no-cost deployment simulation doc.
 
 Do not add cloud hosting yet unless explicitly approved.
 

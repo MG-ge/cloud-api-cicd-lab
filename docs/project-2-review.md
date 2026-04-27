@@ -4,6 +4,8 @@ Review date: 2026-04-27
 
 Updated after must-fix items: 2026-04-27
 
+Updated after Docker build CI check: 2026-04-27
+
 Reviewer stance: strict senior reviewer for a junior SaaS/Application Support, Cloud Support, Application Support, Integration Support, and early DevOps/SRE portfolio path.
 
 ## 1. Executive Verdict
@@ -25,8 +27,7 @@ What is strong:
 
 What is weak:
 
-- Docker is only verified manually, not in CI.
-- CI is intentionally basic and does not run linting, type checks, or Docker build checks.
+- CI is intentionally basic and does not run linting or type checks.
 - There is no real deployment, which is acceptable, but the owner must explain that clearly.
 - The owner still needs to practice explaining the project without reading from the docs.
 
@@ -48,6 +49,7 @@ This is a junior portfolio lab showing that I can build and support a small API,
 | Dockerfile | Present | Simple Python 3.12 image. |
 | `.dockerignore` | Present | Excludes local/cache files. |
 | GitHub Actions CI | Present | Runs pytest on push and pull request. |
+| Docker build in CI | Present | Builds the Docker image without pushing it to a registry. |
 | Health endpoint | Present | `GET /health`. |
 | Config endpoint | Present | `GET /config`, safe values only. |
 | Readiness endpoint | Present | `GET /ready`, returns 503 when required config is missing. |
@@ -150,7 +152,6 @@ Weaknesses that are acceptable for now:
 
 - Runs as root.
 - No Docker healthcheck.
-- Docker build is not tested in CI.
 
 These are not must-fix items for this portfolio stage.
 
@@ -164,10 +165,11 @@ The workflow is correctly scoped:
 - sets up Python 3.12
 - installs dependencies
 - runs pytest
+- builds the Docker image
 
 This is enough for a junior support/cloud-readiness portfolio project.
 
-Nice improvement later: add dependency caching or a Docker build check, but only after the owner can explain the current CI clearly.
+Nice improvement later: add dependency caching, but only after the owner can explain the current CI clearly.
 
 ### Dependency Files
 
@@ -284,12 +286,12 @@ I would check whether `REQUIRED_DEPENDENCY_URL` is set and not blank, then inspe
 ### 2 Likely Weaknesses An Interviewer Might Notice
 
 - There is no real cloud deployment yet.
-- Docker is not built or tested inside the CI workflow.
+- CI does not deploy the app or push the Docker image anywhere.
 
 Good response:
 
 ```text
-Those are intentional limits for this stage. This repo proves local API behavior, Docker basics, CI tests, and support documentation. I would add real deployment or Docker-in-CI only after I can explain the current foundation clearly.
+Those are intentional limits for this stage. This repo proves local API behavior, Docker basics, CI tests, Docker image build checks, and support documentation. I would add real deployment only after I can explain the current foundation clearly.
 ```
 
 ## 7. Improvement Backlog
@@ -307,7 +309,6 @@ Completed must-fix items:
 ### Nice To Improve
 
 - Add tests for uppercase and whitespace boolean env values.
-- Add a CI step that builds the Docker image.
 - Add a short `docs/local-verification.md` file with the exact latest verification commands and expected results.
 - Add one support case for missing secret/config value in a deployment-like environment.
 - Add a short architecture diagram in Markdown or Mermaid.
@@ -389,7 +390,7 @@ Next best step:
 
 1. Practice explaining Project 2 manually.
 2. Add Project 2 to CV/LinkedIn when ready.
-3. Only then decide whether to add Docker build in CI or a no-cost deployment simulation.
+3. Only then decide whether to add a no-cost deployment simulation.
 
 The repo is already a credible junior portfolio project. The next gains come from presentation, explanation, and small verification polish, not more architecture.
 
@@ -411,5 +412,6 @@ The repo now has:
 - known limitations
 - AI usage note
 - local and GitHub CI verification
+- Docker build verification in CI
 
 Do not add more features until the owner can answer the interview questions without AI.

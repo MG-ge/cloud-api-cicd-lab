@@ -2,7 +2,7 @@
 
 ## Current Recommendation
 
-Slice 5 is complete. The project now has career-package text and interview practice material.
+Slice 6 is implemented locally. The CI workflow now runs pytest and builds the Docker image.
 
 Do not add real cloud hosting yet.
 
@@ -28,6 +28,7 @@ The workflow should:
 - set up Python 3.12
 - install dependencies
 - run pytest
+- build the Docker image
 
 GitHub CI should also show a passing run for the latest commit.
 
@@ -54,7 +55,7 @@ GitHub automatically runs checks after code changes.
 For this project, CI answers:
 
 ```text
-Can GitHub install the project and run the tests successfully?
+Can GitHub install the project, run the tests, and build the Docker image successfully?
 ```
 
 CI does not mean:
@@ -72,6 +73,7 @@ The app is monitored.
 - `actions/checkout` gives the workflow access to the repo files.
 - `actions/setup-python` installs the requested Python version.
 - `pytest` is the actual test command.
+- `docker build` checks whether the Dockerfile can produce an image.
 - A green CI run means tests passed in GitHub's runner.
 - A red CI run means something failed and the logs must be read.
 - `/health` means the process can respond.
@@ -92,16 +94,16 @@ Before adding more code, practice:
 - one support case
 - one honest limitation
 
-After practice, choose one:
+After this CI update is verified, choose one:
 
 1. Add Project 2 to CV and LinkedIn.
-2. Add a Docker build check to CI as a small technical improvement.
-3. Start a no-cost deployment simulation doc.
+2. Start a no-cost deployment simulation doc.
+3. Continue interview practice.
 
 Recommended next step:
 
 ```text
-Test the owner with interview questions before adding more features.
+Verify the latest GitHub Actions run, then test the owner with interview questions before adding more features.
 ```
 
 Do not add:

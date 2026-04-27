@@ -8,7 +8,7 @@ This is not production experience. It is a local learning and portfolio project.
 
 ## Current State
 
-Slices 1-5 are implemented:
+Slices 1-6 are implemented:
 
 - FastAPI app
 - `GET /health`
@@ -18,6 +18,7 @@ Slices 1-5 are implemented:
 - pytest coverage for config, health, and readiness behavior
 - Dockerfile for local container runs
 - GitHub Actions workflow for running tests in CI
+- GitHub Actions Docker image build check
 - deployment-readiness documentation
 - secrets-handling notes
 - rollback/redeploy notes
@@ -166,8 +167,9 @@ The CI workflow does:
 2. Set up Python.
 3. Install dependencies from `requirements.txt`.
 4. Run `pytest`.
+5. Build the Docker image.
 
-CI does not deploy the app. It only proves the automated tests pass in GitHub's runner environment.
+CI does not deploy the app or push a Docker image to a registry. It proves the automated tests pass and the Docker image can build in GitHub's runner environment.
 
 ## Support Documentation
 

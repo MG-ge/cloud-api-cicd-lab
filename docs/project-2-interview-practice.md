@@ -107,13 +107,13 @@ Correct. I intentionally kept this version focused on local API behavior, Docker
 Weakness:
 
 ```text
-Docker is not built in CI.
+CI does not deploy or publish the Docker image.
 ```
 
 Good answer:
 
 ```text
-Correct. The current CI runs pytest only. A reasonable next improvement would be to add a Docker build check to CI, but I wanted the first CI workflow to stay simple and explainable.
+Correct. The current CI runs pytest and builds the Docker image, but it does not deploy the app or push the image to a registry. That is intentional because this project is still a junior portfolio lab, not production infrastructure.
 ```
 
 ## Practice Interview

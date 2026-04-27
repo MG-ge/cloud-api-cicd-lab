@@ -30,7 +30,7 @@ The goal is to prove practical readiness for roles like:
 
 ## Current State
 
-The project plan has been reviewed and Slices 1-5 are implemented:
+The project plan has been reviewed and Slices 1-6 are implemented:
 
 - local FastAPI app
 - environment-based config
@@ -38,6 +38,7 @@ The project plan has been reviewed and Slices 1-5 are implemented:
 - pytest coverage
 - Dockerfile
 - GitHub Actions CI
+- Docker build check in CI
 - deployment-readiness documentation
 - secrets-handling notes
 - rollback/redeploy notes
