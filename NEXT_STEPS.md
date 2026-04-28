@@ -30,6 +30,8 @@ It does not claim production experience or real cloud deployment.
 
 ## Do Not Add To Project 2 Now
 
+Do not add more Project 2 features unless a real blocker is discovered.
+
 - Kubernetes
 - frontend
 - authentication
@@ -56,17 +58,13 @@ Prove junior-ready troubleshooting around logs, metrics, alerts, incidents, runb
 
 Project 3 should build on Project 2 without turning Project 2 into a larger system.
 
-Suggested Project 3 scope:
+Project 3 direction:
 
 - structured application logs
-- request IDs or correlation IDs
-- simple metrics endpoint or metrics simulation
-- fake incident scenarios
-- alert investigation notes
-- incident timeline
-- postmortem document
-- runbook for common failures
-- local-only or no-cost tooling
+- metrics or uptime checks
+- incident scenarios
+- runbook updates
+- postmortem writeups
 
 Keep it junior-credible.
 

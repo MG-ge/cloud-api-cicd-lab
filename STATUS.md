@@ -120,21 +120,22 @@ Optional improvements not implemented:
 
 ## Latest Verification
 
-Last verified on 2026-04-27.
+Last verified on 2026-04-28.
 
 ```text
-pytest: 13 passed
+tests: 13 passed
 GET /health: 200
-GET /config: 200
+GET /config: 200, safe non-secret values only
 GET /ready without REQUIRED_DEPENDENCY_URL: 503
 GET /ready with REQUIRED_DEPENDENCY_URL: 200
 docker build -t cloud-api-cicd-lab:local .: passed
 docker run without REQUIRED_DEPENDENCY_URL: passed, /ready returned 503
 docker run with REQUIRED_DEPENDENCY_URL: passed, /ready returned 200
 local pytest after adding CI workflow: passed, 13 passed
-GitHub Actions CI: passed on GitHub
+GitHub Actions pytest job: passed on GitHub
 local docker build -t cloud-api-cicd-lab:test .: passed
-GitHub Actions Docker build: passed on GitHub
+GitHub Actions Docker build job: passed on GitHub
+no real secrets committed: verified
 deployment-readiness docs: added
 support cases: added
 runbook: added
@@ -146,7 +147,7 @@ interview practice guide: added
 
 Project 2 v1 is complete.
 
-Stop adding features to Project 2 for now. It already proves the intended junior cloud/application support readiness skills:
+Project 2 should now stop at v1. It already proves the intended junior cloud/application support readiness skills:
 
 - environment-based configuration
 - `/health`, `/config`, and `/ready`
@@ -164,6 +165,8 @@ Project 3 should be `Observability + Incident Response Lab`.
 The next project should focus on logs, metrics, alerts, incident triage, runbooks, and post-incident review.
 
 Do not expand Project 2 into Kubernetes, frontend, auth, database, or a SaaS ticket system.
+
+Project 2 v1 is complete.
 
 ## Not In Scope For v1
 
