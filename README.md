@@ -178,6 +178,7 @@ CI does not deploy the app or push a Docker image to a registry. It proves the a
 - [Deployment readiness notes](docs/deployment-readiness.md)
 - [Secrets handling notes](docs/secrets-handling.md)
 - [Rollback and redeploy notes](docs/rollback-redeploy.md)
+- [Known limitations](docs/known-limitations.md)
 - [Cloud API support runbook](runbooks/cloud-api-support-runbook.md)
 - [Support cases](support-cases/README.md)
 - [Career package](docs/career-package-project-2.md)
@@ -209,6 +210,10 @@ Returns `200` when `REQUIRED_DEPENDENCY_URL` is present and not blank.
 Returns `503` when `REQUIRED_DEPENDENCY_URL` is missing or blank.
 
 It does not call the external URL.
+
+## Known Limitations
+
+This is a local cloud/API-readiness lab, not a production service. Current limitations are documented in [docs/known-limitations.md](docs/known-limitations.md).
 
 ## Out Of Scope
 
