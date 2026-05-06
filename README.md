@@ -1,5 +1,26 @@
 # Cloud API + CI/CD Lab
 
+**What this proves.** Environment configuration, `/health` vs `/ready` semantics, a green CI pipeline that builds the Docker image, plus rollback/redeploy and secrets-handling notes — the deploy-readiness fundamentals AZ-900 / cloud-support roles look for.
+
+**30-second tour.**
+
+```bash
+git clone https://github.com/MG-ge/cloud-api-cicd-lab && cd cloud-api-cicd-lab
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt && pytest
+PORT=8020 scripts/run-dev.sh
+# in another terminal:
+curl -s -i http://127.0.0.1:8020/ready
+# 503 — by design: REQUIRED_DEPENDENCY_URL is not set yet.
+REQUIRED_DEPENDENCY_URL=https://example.invalid PORT=8020 scripts/run-dev.sh
+curl -s -i http://127.0.0.1:8020/ready
+# 200 — readiness now passes.
+```
+
+**Status:** v1 complete · `pytest` green · GitHub Actions runs tests + builds the image · no real cloud deploy.
+
+---
+
 A junior-friendly portfolio lab for cloud support, application support, SaaS technical support, product support, and junior integration-adjacent roles.
 
 This project builds on Project 1, `b2b-saas-support-lab`. Project 1 proved API, SQLite, logs, tests, support cases, and runbooks. Project 2 focuses on cloud/application support readiness: environment variables, health/readiness checks, Docker, CI, deployment documentation, secrets handling, and rollback/redeploy notes.
