@@ -1,4 +1,4 @@
-# AGENTS.md
+# Cloud API + CI/CD Lab
 
 ## Project Purpose
 
@@ -67,16 +67,9 @@ Prefer:
 - deployment documentation, not paid deployment by default
 - support cases and runbooks that explain failures clearly
 
-Avoid:
-
-- Kubernetes
-- microservices
-- complex authentication
-- frontend work
-- paid cloud services
-- real production secrets
-- fake production claims
-- broad rewrites
+Scope is one small local FastAPI service; propose anything larger before
+building it. Describe what the lab actually does — never claim production
+experience, real customers, or real production secrets.
 
 ## Engineering Rules
 
